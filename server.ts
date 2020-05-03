@@ -10,6 +10,12 @@ app.prepare()
   .then(() => {
     const server = express()
 
+    server.get('/', (req, res) => {
+      return handle(req, res);
+    })
+
+    server.use(express.static(path.join(__dirname, 'dist')))
+
     server.get('/dashboard', (req, res) => {
       return res.sendFile(path.join(__dirname + '/dist/index.html'));
     })

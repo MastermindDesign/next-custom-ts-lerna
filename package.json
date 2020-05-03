@@ -4,7 +4,7 @@
   "description": "FitHub UI",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "ts-node --project tsconfig.server.json server.ts",
+    "dev": "nodemon",
     "devApp": "webpack --config ./webpack.config.js"
   },
   "author": "fr0nk3nst33n",
@@ -22,6 +22,7 @@
     "@types/react-dom": "^16.9.7",
     "@types/webpack": "^4.41.12",
     "html-webpack-plugin": "^4.3.0",
+    "nodemon": "^2.0.3",
     "source-map-loader": "^0.2.4",
     "ts-loader": "^7.0.2",
     "ts-node": "^8.9.1",
