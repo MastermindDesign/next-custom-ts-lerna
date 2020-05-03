@@ -2,10 +2,10 @@
   "name": "fithub-ui",
   "version": "0.0.1",
   "description": "FitHub UI",
-  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "next dev -p 8081"
+    "dev": "ts-node --project tsconfig.server.json server.ts",
+    "devApp": "webpack --config ./webpack.config.js"
   },
   "author": "fr0nk3nst33n",
   "license": "ISC",
@@ -19,6 +19,14 @@
   "devDependencies": {
     "@types/node": "^13.13.4",
     "@types/react": "^16.9.34",
-    "typescript": "^3.8.3"
+    "@types/react-dom": "^16.9.7",
+    "@types/webpack": "^4.41.12",
+    "html-webpack-plugin": "^4.3.0",
+    "source-map-loader": "^0.2.4",
+    "ts-loader": "^7.0.2",
+    "ts-node": "^8.9.1",
+    "typescript": "^3.8.3",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.11"
   }
 }
